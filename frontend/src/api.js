@@ -1,11 +1,27 @@
 import axios from 'axios';
-const API = axios.create({ baseURL: process.env.REACT_APP_API_URL || 'http://localhost:4000/api' });
 
+const API = axios.create({
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:4000/api'
+});
+
+// Upload XML file
 export async function uploadXml(file) {
   const fd = new FormData();
   fd.append('file', file);
-  const r = await API.post('/reports/upload', fd, { headers: { 'Content-Type': 'multipart/form-data' }});
-  return r.data;
+  const res = await API.post('/reports/upload', fd, {
+    headers: { 'Content-Type': 'multipart/form-data' }
+  });
+  return res.data;
 }
-export async function listReports() { return (await API.get('/reports')).data; }
-export async function getReport(id) { return (await API.get(`/reports/${id}`)).data; }
+
+// List all reports
+export async function listReports() {
+  const res = await API.get('/reports');
+  return res.data;
+}
+
+// Get single report by ID
+export async function getReport(id) {
+  const res = await API.get(`/reports/${id}`);
+  return res.data;
+}
