@@ -1,7 +1,7 @@
 # CreditSea — MERN XML Credit Report Processor
 
 **Author:** [Ishan Ahmad Siddiqui](mailto:ishansiddiqui011@gmail.com)  
-**GitHub:** [Linkdin](https://linkedin.com/in/ishan-ahmad-siddiqui)
+**Linkedin:** [Linkdin](https://linkedin.com/in/ishan-ahmad-siddiqui)
 
 ---
 
