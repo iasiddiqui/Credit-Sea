@@ -72,3 +72,13 @@ A **React + Vite + Tailwind** frontend:
 | **Tools** | Axios, React Router DOM |
 
 ---
+##  Screenshots
+
+![CreditSea Screenshot](frontend/src/assets/s1.png)
+![CreditSea Screenshot](frontend/src/assets/s2.png)
+![CreditSea Screenshot](frontend/src/assets/s3.png)
+![CreditSea Screenshot](frontend/src/assets/s4.png)
+
+
+
+---
